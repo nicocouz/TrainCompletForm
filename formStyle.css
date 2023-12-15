@@ -16,7 +16,7 @@ body {
 }
 
 .card {
-    width: 600px; /* Adjusted width for a larger card */
+    width: 600px auto; /* Adjusted width for a larger card */
     margin: 0 50px; /* Adjusted margin for spacing */
 }
 
@@ -42,5 +42,5 @@ body {
 }
 
 .form-label{
-    font-size: 23px;
+    font-size: 18px;
 }
