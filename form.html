@@ -1,44 +1,90 @@
-<!DOCTYPE html>
+</html>
+
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Train Complet - Formulaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="formStyle.css">
     <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
-
-    <title>Bootstrap Card Transition</title>
 </head>
 
 <body>
-    <div class="container mt-3">
-        <div class="card p-3">
-            <label for="formGroupExampleInput" class="form-label">Je souhaite :</label>
 
-            <div class="form-check">
+
+    <div class="card">
+        <div class="card-header mb-4" href="#">
+            <img src="iconTrain.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Train Complet - Formulaire
+        </div>
+        <div class="card-body row mx-md-n5">
+            <h5 class="card-title mb-4">Je souhaite:</h5>
+
+            <div class="form-check mb-2 px-lg-3">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
                     checked>
-                <label class="form-check-label" for="exampleRadios1">Poser une option sur un billet</label>
+                <label class="form-check-label" for="exampleRadios1">
+                    Poser une option
+                </label>
             </div>
-            <div class="form-check">
+            <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">Échanger un billet</label>
+                <label class="form-check-label" for="exampleRadios2">
+                    Échanger un billet
+                </label>
             </div>
-            <div class="form-check">
+            <div class="form-check mb-5">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                <label class="form-check-label" for="exampleRadios3">Réserver un nouveau billet</label>
+                <label class="form-check-label" for="exampleRadios3">
+                    Reserver un nouveau billet
+                </label>
             </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                <button type="button" class="btn btn-primary btn-sm button">Continuer</button>
-            </div>
+
+        
+
+            <div class="mb-4">
+                <h5 class="card-title mb-4">Quelle est votre gare de départ ? :</h5>
+                <!-- Search Input with Dropdown -->
+                <div>
+                  <input type="text" class="form-control" id="searchInputDepart" placeholder="Gare de départ...">
+                  <div id="csvDropdownDepart">
+                    <!-- CSV values will be dynamically added here -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mb-1">
+                <h5 class="card-title mb-4">Quelle est votre gare d'arrivée ? :</h5>
+                <!-- Search Input with Dropdown -->
+                <div>
+                  <input type="text" class="form-control" id="searchInputArrivee" placeholder="Gare d'arrivée...">
+                  <div id="csvDropdownArrivee">
+                    <!-- CSV values will be dynamically added here -->
+                  </div>
+                </div>
+              </div>
+
+
+            <a href="#" class="btn btn-primary mt-5">suivant</a>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="formScript.js"></script>
+
+
+
 </body>
 
 </html>
+<!--
+// https://nicocouz.github.io/TrainCompletForm/form.html
+-->
