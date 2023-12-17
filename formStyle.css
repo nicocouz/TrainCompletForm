@@ -2,20 +2,13 @@
     font-family: 'Lexend';font-size: 18px;
     background-color: #f8f9fa;
     height: 100vh;
-    margin: 2%;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Example media query for small screens */
-@media only screen and (max-width: 767px) {
-    #csvDropdownDepart,
-    #csvDropdownArrivee {
-      /* Add or modify styles as needed for small screens */
-      display: block !important; /* Important to override other styles if necessary */
-    }
-  }
+
   
 /*
 .card-container {
